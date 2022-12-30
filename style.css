@@ -654,7 +654,26 @@ footer .copyright-section {
 }
 
 
+/* Chat Support Icon */
 
+.chat-support{
+    z-index: 101;
+    position: fixed;
+    bottom: 7%;
+    right: 7%;
+}
+
+.chat-support button{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.chat-support  i{
+    font-size: 40px;
+    color: #02d6c9;
+}
 
 
 
