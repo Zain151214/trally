@@ -26,6 +26,57 @@ body {
 }
 
 
+/* Important Repetitive CSS */
+
+
+/* Main Heading */
+.main-heading {
+    color: #0e0f11;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    font-size: 38px;
+    line-height: 44px;
+    font-weight: 700;
+    font-family: Quicksand;
+}
+
+.main-heading span {
+    color: #4e6bee;
+}
+
+/* Secondary Heading */
+.secondary-heading {
+    margin-top: 0px;
+    margin-bottom: 12px;
+    padding-right: 0px;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    text-align: center;
+    font-family: Quicksand;
+}
+
+.secondary-heading span {
+    color: #4e6bee;
+}
+
+.sub-heading {
+    font-family: SFProDisplay;
+    color: #02d6c9;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+
 /* -------------Nav Bar----------- */
 
 nav {
@@ -34,6 +85,7 @@ nav {
     align-items: center;
     padding: 12px 24px;
     margin-top: 8px;
+    width: 100%;
 }
 
 nav .logo img {
@@ -50,6 +102,7 @@ nav ul li {
     position: relative;
     padding: 16px;
     cursor: pointer;
+    list-style: none;
 }
 
 
@@ -123,7 +176,6 @@ nav ul li:hover ul.dropdown-menu {
 }
 
 
-
 /* Nav Bar code */
 nav ul li a {
     display: block;
@@ -154,7 +206,7 @@ nav ul li a:hover {
 }
 
 
-/* Hamberger Meny */
+/* Hamberger Menu */
 #hamberger-menu {
     display: none;
 }
@@ -171,11 +223,11 @@ nav ul li a:hover {
 
 .hero-section {
     padding: 60px 24px 120px;
+    width: 100%;
 }
 
-
-/* Main Section */
 .hero-section .main-section {
+    width: 100%;
     display: flex;
     align-items: center;
     margin-bottom: 150px;
@@ -220,9 +272,8 @@ nav ul li a:hover {
     bottom: 5%;
 }
 
-
-/* Youtube Section */
 .hero-section .youtube-section {
+    width: 100%;
     display: flex;
 }
 
@@ -236,51 +287,6 @@ nav ul li a:hover {
     padding-left: 70px;
 }
 
-
-/* Main Heading */
-.main-heading {
-    color: #0e0f11;
-    margin-top: 0px;
-    margin-bottom: 16px;
-    font-size: 38px;
-    line-height: 44px;
-    font-weight: 700;
-    font-family: Quicksand;
-}
-
-.main-heading span {
-    color: #4e6bee;
-}
-
-/* Secondary Heading */
-.secondary-heading {
-    margin-top: 0px;
-    margin-bottom: 12px;
-    padding-right: 0px;
-    font-size: 32px;
-    line-height: 40px;
-    font-weight: 700;
-    text-align: center;
-    font-family: Quicksand;
-}
-
-.secondary-heading span {
-    color: #4e6bee;
-}
-
-.sub-heading {
-    font-family: SFProDisplay;
-    color: #02d6c9;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    line-height: 20px;
-    margin-bottom: 8px;
-}
-
-
-/* Content */
 .content {
     font-size: 18px;
     line-height: 25px;
@@ -315,7 +321,6 @@ nav ul li a:hover {
     text-align: center;
     border-radius: 20px;
     box-shadow: 3px 3px 13px 0 rgb(78 107 238 / 10%);
-    ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -380,6 +385,7 @@ nav ul li a:hover {
 }
 
 .spot-section .spot-cards-container {
+    width: 100%;
     padding: 50px 0 30px;
     display: flex;
 }
@@ -441,6 +447,9 @@ nav ul li a:hover {
     background-color: #02d6c9;
     transition: 300ms ease-in-out;
 }
+
+
+
 
 
 
@@ -520,6 +529,7 @@ nav ul li a:hover {
 .section-3 .showcase-section {
     display: flex;
     margin: 256px 0 128px;
+    width: 100%;
 }
 
 .showcase-section .showcase-content {
@@ -554,6 +564,9 @@ nav ul li a:hover {
 .showcase-section .showcase-img img {
     border-radius: 20px;
 }
+
+
+
 
 
 
@@ -654,23 +667,26 @@ footer .copyright-section {
 }
 
 
+
+
+
 /* Chat Support Icon */
 
-.chat-support{
+.chat-support {
     z-index: 101;
     position: fixed;
     bottom: 7%;
     right: 7%;
 }
 
-.chat-support button{
+.chat-support button {
     background: transparent;
     border: none;
     outline: none;
     cursor: pointer;
 }
 
-.chat-support  i{
+.chat-support i {
     font-size: 40px;
     color: #02d6c9;
 }
@@ -701,8 +717,8 @@ footer .copyright-section {
 /* -------------Media Queries---------- */
 
 
-
-@media screen and (max-width: 480px) {
+/* Mobile Devices */
+@media screen and (max-width: 600px) {
 
     /* NavBar */
     nav ul {
@@ -721,7 +737,6 @@ footer .copyright-section {
 
     .hero-section .main-section {
         flex-wrap: wrap;
-        width: 100%;
         text-align: center;
     }
 
@@ -780,10 +795,13 @@ footer .copyright-section {
 
 
 
-    /* --------------Section 2--------------- */
+
+
+
+    /* Section 2 */
     .section-2 {
+        overflow-x: hidden;
         padding: 0 15px;
-        width: 100%;
     }
 
     .section-2 .cards-section {
@@ -792,7 +810,6 @@ footer .copyright-section {
     }
 
     .section-2 .screen-section {
-        width: 100%;
         flex-wrap: wrap;
     }
 
@@ -811,10 +828,6 @@ footer .copyright-section {
         padding-left: 0px;
     }
 
-    .section-2 .spot-section {
-        width: 100%;
-    }
-
     .spot-section .spot-cards-container {
         flex-wrap: wrap;
     }
@@ -829,10 +842,12 @@ footer .copyright-section {
     }
 
 
-    /* ------------- Section 3-------------- */
+
+
+
+    /*  Section 3 */
     .section-3 {
         padding: 0 15px;
-        width: 100%;
     }
 
     .host-section .host-cards {
@@ -847,7 +862,6 @@ footer .copyright-section {
 
     .section-3 .showcase-section {
         flex-wrap: wrap;
-        width: 100%;
     }
 
     .showcase-section .showcase-content {
@@ -872,14 +886,12 @@ footer .copyright-section {
     }
 
 
+
+
     /* footer */
-    footer {
-        max-width: 100%;
-    }
 
     footer .footer-container {
         flex-wrap: wrap;
-        max-width: 100%;
     }
 
     footer .footer-one {
@@ -900,7 +912,6 @@ footer .copyright-section {
     }
 
     .copyright-section {
-        width: 100%;
         display: flex;
         flex-wrap: wrap;
     }
@@ -919,7 +930,8 @@ footer .copyright-section {
 
 
 
-@media screen and (min-width: 481px) and (max-width: 1023px) {
+/* iPads & Tabs */
+@media screen and (min-width: 601px) and (max-width: 768px) {
 
     /* NavBar */
     nav ul {
@@ -929,6 +941,164 @@ footer .copyright-section {
     nav #hamberger-menu {
         display: block;
     }
+
+
+
+    /* Hero Section */
+    .hero-section .main-section {
+        flex-wrap: wrap;
+    }
+
+    .main-section .main-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-section .main-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-section .youtube-section {
+        flex-wrap: wrap;
+    }
+
+    .youtube-video iframe {
+        width: 93vw;
+        margin-bottom: 40px;
+    }
+
+    .youtube-section .youtube-content {
+        padding-left: 70px;
+    }
+
+
+
+
+
+    /* Section 2 */
+    .section-2 {
+        padding: 0 15px;
+        overflow: hidden;
+    }
+
+    .section-2 .cards-section {
+        flex-wrap: wrap;
+    }
+
+    .section-2 .screen-section {
+        flex-wrap: wrap;
+    }
+
+    .screen-section .screen-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .screen-section .screen-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .screen-section .screen-content {
+        padding-left: 0px;
+    }
+
+    .spot-section .spot-cards-container {
+        flex-wrap: wrap;
+    }
+
+    .spot-cards-container .spot-card {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .center-card {
+        margin: 0;
+    }
+
+
+
+
+
+    /* Section 3 */
+
+    .section-3 {
+        padding: 0 15px;
+        width: 100%;
+    }
+
+    .host-section .host-cards {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .host-cards .card {
+        width: 320px;
+        height: 40rem;
+        margin-bottom: 20px;
+    }
+
+    .section-3 .showcase-section {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .showcase-section .showcase-content {
+        padding-right: 0px;
+        order: 2;
+    }
+
+    .showcase-section .showcase-img {
+        width: 100%;
+        margin-right: 0px;
+        order: 1;
+        margin-bottom: 40px;
+    }
+
+    .showcase-section .showcase-img img {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+
+
+    /* Footer */
+    .footer-container {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    footer .footer-one {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    footer .footer-two {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+
+
+/* Small Screens & Laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* NavBar */
+    nav ul {
+        display: none;
+    }
+
+    nav #hamberger-menu {
+        display: block;
+    }
+
+
 
 
     /* Hero Section */
@@ -983,6 +1153,8 @@ footer .copyright-section {
 
 
 
+
+
     /* Section 2 */
     .section-2 {
         padding: 0 15px;
@@ -1021,6 +1193,8 @@ footer .copyright-section {
         width: 100%;
         height: 100%;
     }
+
+
 
 
 
@@ -1064,6 +1238,9 @@ footer .copyright-section {
     }
 
 
+
+
+
     /* Footer */
     .footer-container {
         flex-wrap: wrap;
@@ -1079,7 +1256,4 @@ footer .copyright-section {
         width: 100%;
         justify-content: space-between;
     }
-
-
-
 }
